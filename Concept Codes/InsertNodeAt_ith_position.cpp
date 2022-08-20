@@ -20,4 +20,15 @@ Node* insertnode(Node* head, int i, int data){
         temp -> nextadd = addnewnode;
     }
     return head;
+    
+    /*while(temp != NULL){                                                  //----------THIS METHOD IS NOT WORKING----------//
+        if(count = i - 1){
+            Node* addnewnode = new Node(data);
+            addnewnode -> nextadd = temp -> nextadd;       
+            temp -> nextadd = addnewnode;
+            //return temp;
+        }
+        temp = temp -> nextadd;
+    }
+    return head;*/
 }
